@@ -57,10 +57,10 @@ link_directories(${OpenCV_LIBRARY_DIRS})
 
 cuda_add_library(inferLib SHARED ${sources})
 ##
-target_link_libraries(inferLib /usr/lib/aarch64-linux-gnu/libnvcaffe_parser.so)
-target_link_libraries(inferLib /usr/lib/aarch64-linux-gnu/libnvinfer.so)
-target_link_libraries(inferLib /usr/lib/aarch64-linux-gnu/libnvinfer_plugin.so)
-target_link_libraries(inferLib /usr/lib/aarch64-linux-gnu/libnvparsers.so)
+target_link_libraries(inferLib /usr/lib/x86_64-linux-gnu/libnvcaffe_parser.so)
+target_link_libraries(inferLib /usr/lib/x86_64-linux-gnu/libnvinfer.so)
+target_link_libraries(inferLib /usr/lib/x86_64-linux-gnu/libnvinfer_plugin.so)
+target_link_libraries(inferLib /usr/lib/x86_64-linux-gnu/libnvparsers.so)
 
 
 # transfer all headers to the include directory
